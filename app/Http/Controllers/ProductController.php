@@ -43,11 +43,11 @@ class   ProductController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Model\Product  $product
-     * @return Product
+     * @return ProductRousource
      */
     public function show(Product $product)
     {
-        return $product;
+        return new ProductRousource($product);
 
 
     }
